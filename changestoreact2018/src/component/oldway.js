@@ -7,6 +7,7 @@ export default class Oldway extends Component {
 
         this.state = {
             name: "Andrew",
+            surname: "Han"
         }
 
         this.handleNameChange.this.handleNameChange.bind(this);
@@ -18,6 +19,12 @@ export default class Oldway extends Component {
         })
     }
 
+    handleSurnameChange = (e) => {
+        this.setState({
+            surname: e.target.value
+        })
+    }
+
     render() {
         return (
             <section>
@@ -25,6 +32,13 @@ export default class Oldway extends Component {
                     <input
                         value={this.state.name}
                         onChnage={this.handleNameChange}
+                    />
+                </div>
+
+                <div>
+                    <input
+                        value={this.state.surname}
+                        onChnage={this.handleSurnameChange}
                     />
                 </div>
             </section>
