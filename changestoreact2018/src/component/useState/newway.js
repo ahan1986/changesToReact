@@ -9,7 +9,6 @@ export default function Oldway(props) {
     const [surname, setSurname] = useState("Han");
 
     function handleNameChange(e) {
-
         setName(e.target.value);
     }
 
@@ -22,14 +21,14 @@ export default function Oldway(props) {
             <div>
                 <input
                     value={name}
-                    onChnage={handleNameChange}
+                    onChange={handleNameChange}
                 />
             </div>
 
             <div>
                 <input
                     value={surname}
-                    onChnage={handlesurnameChange}
+                    onChange={handlesurnameChange}
                 />
             </div>
         </section>
